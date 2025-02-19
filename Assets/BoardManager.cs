@@ -62,7 +62,7 @@ public class BoardManager : MonoBehaviour
             if (tilePrefab != null)
             {
                _Tile = Instantiate(tilePrefab);
-               _Tile.transform.position = new Vector3(x * tileSize, -y * tileSize, 0);
+               _Tile.transform.position = new Vector3(x * tileSize, y * tileSize, 0);
             }
         }
     }
