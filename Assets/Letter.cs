@@ -5,15 +5,18 @@ using TMPro;
 
 public class Letter : MonoBehaviour
 {
-    [SerializeField] private float _Score;
-    private string _Letter;
+    [SerializeField] public float _Score;
+    public string letter;
     [SerializeField] private TMP_Text TMPText;
     public bool isPicked = false;
     private Vector3 mousePosition;
+    public Vector3 initialPosition;
+    public bool isLocked = false;
     // Start is called before the first frame update
     void Start()
     {
-        _Letter = TMPText.text;
+        letter = TMPText.text;
+        initialPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -28,9 +31,8 @@ public class Letter : MonoBehaviour
 
     }
 
-    private void PickLetter()
+    public void PickLetter()
     {
-
-
+        initialPosition = transform.position;
     }
 }
