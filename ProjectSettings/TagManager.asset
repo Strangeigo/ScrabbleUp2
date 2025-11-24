@@ -4,16 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Letter
   - Tile
+  - Letter
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Tiles
+  - Letter
   - Water
   - UI
-  - Letter
+  - Tile
   - 
   - 
   - 
